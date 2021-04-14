@@ -1,0 +1,25 @@
+--------------------------------------------------- WHAT IS KOTLIN? ---------------------------------------------------
+Kotlin is a statically typed JVM based general purpose programming language developed by JetBrains. It is designed to
+fully interoperate with Java. It is widely used in Android application development.
+
+-------------------------------------------------- FEATURES OF KOTLIN --------------------------------------------------
+1. Concise         : Kotlin is more concise and you need to write approximately 40% less code than Java.
+
+2. Interoperability: Kotlin is highly interoperable with Java. i.e. you can call Java class's code from it and vise
+                     versa.
+
+3. Object-Oriented : It is a Object-Oriented programming language. It means it supports the concepts of Classes,
+                     Objects, Abstraction, Encapsulation, Inheritance and Polymorphism.
+
+4. Feature-Rich    : Kotlin provides several advanced features like Operator overloading, Lambda expressions and Higher
+                     order functions.
+
+5. Less Error-Prone: As it is a statically typed language, it makes you able to catch errors at compile-time. Also there
+                     are very less chances for NullPointerExceptions and ClassCastExceptions.
+
+6. Open Source     : Kotlin is a open source language and its source code is available online.
+
+------------------------------------------------ HOW KOTLIN CODE RUNS? ------------------------------------------------
+Java code is complied to Byte Code (.class file) using javac compiler and then Byte Code runs in the JVM. Similarly
+Kotlin code is compiled to Byte Code (.class file) using kotlinc-jvm compiler, then JVM and Kotlin-Runtime together
+generates the output of Byte Code.
