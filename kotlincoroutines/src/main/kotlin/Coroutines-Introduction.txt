@@ -1,0 +1,36 @@
+-------------------------------------------------- KOTLIN COROUTINES --------------------------------------------------
+Asynchronous or non-blocking programming is the new reality. When creating server-side, desktop or mobile applications,
+it's important to provide an experience that is not only fluid from the user's perspective, but scalable when needed.
+
+Kotlin solves this problem in a flexible way by providing coroutine support at the language level and delegating most of
+the functionality to libraries.
+
+Coroutines are light-weight threads and the construction of coroutine is very cheap. Like threads, coroutines can run in
+parallel, wait and communicate with each other. They do not directly map to native os threads, because of that they are
+very faster to create and destroy compared to threads. There is no additional overhead of switching context between
+threads. Practically you can have thousands of or even tens of thousands of coroutines. There might be only one thread
+having thousands of coroutines.
+
+The two most important building blocks to create/start/run new coroutines are coroutine scope and coroutine builders.
+Coroutine scope consists of all the machinery required to run coroutine, for example, it knows where (on which thread)
+to run coroutine and coroutine builders are used to create a new coroutine.
+
+Features of Kotlin Coroutines:
+1. Easy to use: The syntax for coroutines is simple, easy to use and makes code more readable.
+
+2. Lightweight: Coroutines are lighter than Threads and supports suspending which allows blocking only current coroutine
+and let other coroutines in the current thread continue their work.
+
+3. Built-in cancellation support: Cancellation is generated automatically through the running coroutine hierarchy.
+
+4. Fewer memory leaks: It uses structured concurrency to run operations within a scope which avoids memory leaks.
+
+5. Jetpack integration: Many Jetpack libraries include extensions that provide full coroutines support. Some libraries
+also provide their own coroutine scope that one can use for structured concurrency.
+
+
+NOTE:
+1. Coroutines are not threads.
+2. While executing the process, the application waits for all its thread to finish. Once all threads are finished
+   working the process exits. Whereas for coroutines, the process do not wait for any coroutines to finish it work by
+   default.
